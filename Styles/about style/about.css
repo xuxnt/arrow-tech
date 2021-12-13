@@ -265,22 +265,176 @@ header nav ul a:hover {
   line-height: 1.5rem;
 }
 
-.desc button {
-  border: none;
-  outline: 1px solid white;
-  border-radius: 0.3rem;
-  padding: 0.8rem 2rem;
-  background: none;
-  color: white;
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+@media screen and (max-width: 1024px) {
+  .desc {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+  }
+  .desc article {
+    margin: 0 5ch;
+  }
+  .desc article:first-child {
+    position: relative;
+    top: 25%;
+  }
+  .desc h1 {
+    width: 50%;
+    font-size: 2.3rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+  .desc p {
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5rem;
+    width: 70%;
+  }
+  .box:nth-child(1) {
+    left: 15%;
+    top: 70%;
+  }
+  .box:nth-child(2) {
+    left: 80%;
+    top: 80%;
+  }
+  .box:nth-child(3) {
+    left: 85%;
+    top: 20%;
+  }
+  .wave {
+    width: 1000px;
+    height: 1000px;
+    top: 44%;
+    right: -40%;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .wave img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.desc button:hover {
-  color: #0d3d5f;
-  background-color: #fff;
+@media screen and (max-width: 600px) {
+  .desc {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .desc article {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+  }
+  .desc article:first-child {
+    position: relative;
+    top: 12%;
+  }
+  .desc article:last-child {
+    position: relative;
+    bottom: 5%;
+  }
+  .desc article h1 {
+    width: 50%;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+  .desc article p {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5rem;
+    width: 90%;
+  }
+  .main-logo {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 150px;
+    height: 75px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .dot {
+    width: 50px;
+    height: 40px;
+  }
+  .dot span {
+    width: 4px;
+    height: 4px;
+  }
+  .dot1 {
+    top: 0;
+    right: 5%;
+  }
+  .dot2 {
+    bottom: -1%;
+    left: 5%;
+  }
+  .box:nth-child(1) {
+    left: 30%;
+    top: 70%;
+  }
+  .box:nth-child(2) {
+    left: 90%;
+    top: 70%;
+  }
+  .box:nth-child(3) {
+    left: 90%;
+    top: 30%;
+  }
+  .wave {
+    width: 1000px;
+    height: 1000px;
+    top: 44%;
+    right: -130%;
+    -webkit-transform: rotate(130deg);
+            transform: rotate(130deg);
+  }
+  .wave img {
+    width: 100%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=about.css.map */

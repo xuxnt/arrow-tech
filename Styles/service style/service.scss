@@ -190,6 +190,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   color: white;
+  position: relative;
+  margin-top: 5ch;
 
   article {
     flex: 1;
@@ -209,11 +211,14 @@ header {
           text-decoration: none;
           color: white;
           font-family: "Quicksand", sans-serif;
-          font-size: 2rem;
+          font-size: 1.5rem;
           transition: 0.2s;
           &:hover {
             transform: translateX(10px);
             color: #e2e2e2;
+          }
+          &::after {
+            content: "  ->";
           }
         }
       }
@@ -235,25 +240,167 @@ header {
     text-transform: uppercase;
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 2rem 0;
     font-family: "Quicksand", sans-serif;
     line-height: 1.5rem;
   }
-  button {
-    border: none;
-    outline: 1px solid white;
-    border-radius: 0.3rem;
-    padding: 0.8rem 2rem;
-    background: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .box:nth-child(1) {
+    left: 15%;
+    top: 70%;
+  }
+
+  .box:nth-child(2) {
+    left: 80%;
+    top: 80%;
+  }
+
+  .box:nth-child(3) {
+    left: 85%;
+    top: 20%;
+  }
+
+  .wave {
+    width: 1000px;
+    height: 1000px;
+    top: 44%;
+    right: -40%;
+    transform: rotate(135deg);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .desc {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     color: white;
-    cursor: pointer;
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    transition: 0.2s;
-    &:hover {
-      color: #0d3d5f;
-      background-color: #fff;
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+
+    article {
+      flex: 1;
+      padding: 0;
+      margin: 0;
+      .list {
+        ul {
+          position: relative;
+          left: 5ch;
+          height: 40ch;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          list-style: none;
+          margin-top: 2rem;
+          a {
+            text-decoration: none;
+            color: white;
+            font-family: "Quicksand", sans-serif;
+            font-size: 1.1rem;
+            transition: 0.2s;
+            &:hover {
+              transform: translateX(10px);
+              color: #e2e2e2;
+            }
+            &::after {
+              content: "  ->";
+            }
+          }
+        }
+      }
+      .address {
+        position: relative;
+        p {
+          &:last-child {
+            position: relative;
+            bottom: 20px;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 0.8rem;
+      margin: 2rem 0;
+      font-family: "Quicksand", sans-serif;
+      line-height: 1.5rem;
+      width: 80%;
+    }
+  }
+
+  .main-logo {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 150px;
+    height: 75px;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .dot {
+    width: 50px;
+    height: 40px;
+    span {
+      width: 4px;
+      height: 4px;
+    }
+  }
+
+  .dot1 {
+    top: 0;
+    right: 5%;
+  }
+
+  .dot2 {
+    bottom: -1%;
+    left: 5%;
+  }
+
+  .box:nth-child(1) {
+    left: 30%;
+    top: 70%;
+  }
+
+  .box:nth-child(2) {
+    left: 90%;
+    top: 70%;
+  }
+
+  .box:nth-child(3) {
+    left: 90%;
+    top: 30%;
+  }
+
+  .wave {
+    width: 1000px;
+    height: 1000px;
+    top: 44%;
+    right: -130%;
+    transform: rotate(130deg);
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
