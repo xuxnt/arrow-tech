@@ -193,24 +193,25 @@ header {
 
   article {
     flex: 1;
-    margin: 0 5ch;
+    margin-top: 10ch;
+    margin-left: 10ch;
     .list {
       margin: 8ch 0;
       ul {
         position: relative;
-        height: 50ch;
+        height: 30ch;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         list-style: none;
-        margin-top: 3ch;
+        margin-top: 2rem;
         margin-left: 2rem;
         a {
           text-decoration: none;
           color: white;
           font-family: "Quicksand", sans-serif;
-          font-size: 2.5rem;
+          font-size: 2rem;
           transition: 0.2s;
           &:hover {
             transform: translateX(10px);
